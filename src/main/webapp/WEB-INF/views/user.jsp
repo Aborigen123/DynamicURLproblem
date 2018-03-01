@@ -8,7 +8,7 @@
 </head>
 <body>
 <h1>Users</h1>
-<a href="${pageContext.request.contextPath}/user/profile" >Show Profile2 ${list}</a><br />
+<a href="${pageContext.request.contextPath}/${listUser}/profile" >Show Profile </a><br />
 
 </body>
 </html>

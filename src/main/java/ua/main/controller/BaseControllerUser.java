@@ -14,16 +14,16 @@ public class BaseControllerUser {
 	@GetMapping("/")
 	public String showHome(Model model) {
 			List<String> listUsers = new ArrayList<>();
-				listUsers.add("User" + 1);
-				listUsers.add("User" + 2);
-				listUsers.add("User" + 3);
-				listUsers.add("User" + 4);
-				listUsers.add("User" + 5);
-				listUsers.add("User" + 6);
-				listUsers.add("User" + 7);
-				listUsers.add("User" + 8);
-				listUsers.add("User" + 9);
-				listUsers.add("User" + 10);
+				listUsers.add("User1");
+				listUsers.add("User2");
+				listUsers.add("User3");
+				listUsers.add("User4");
+				listUsers.add("User5");
+				listUsers.add("User6");
+				listUsers.add("User7");
+				listUsers.add("User8");
+				listUsers.add("User9");
+				listUsers.add("User10");
 
 				model.addAttribute("newUser", listUsers);
 		return "home";
@@ -33,13 +33,13 @@ public class BaseControllerUser {
 	public String showUser(Model model,
 			@PathVariable("userList") String userName) {
 		model.addAttribute("listUser", userName);
-		return "user";
+		return "/user";
 	}
 	
-	@GetMapping("/{list}/profile")//{list} - ліст цю назву підставляю з forEach де var="list" 
+	@GetMapping("/{listUser}/profile")//{list} - ліст цю назву підставляю з forEach де var="list" 
 	public String showProfile() {
 	
-		return "user";
+		return "/user/profile";
 	}
 	
 	
