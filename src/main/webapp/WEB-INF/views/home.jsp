@@ -9,9 +9,6 @@
 </head>
 <body>
 <h1>Hello</h1>
-<h4> Перехід на список лістів виконується добре н-д: http://localhost:8080/User4 <br />
-а от коли переходжу далі на наступну сторінку в мене http://localhost:8080/user/profile User4 пропадає <br />
-</h4>
 <c:forEach items="${newUser}" var="list">
 <a href="${pageContext.request.contextPath}/${list}" >Show Profile ${list}</a><br />
 </c:forEach>
